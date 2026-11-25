@@ -179,6 +179,22 @@ ul, ol { padding: 0; list-style: none; }
   color: var(--text);
   min-height: 1.47em;
 }
+/* "Bientôt disponible": no .ipa published yet, the badge stands where the button will go. */
+.soon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 14px 28px 14px 22px;
+  border-radius: 999px;
+  border: 1.5px solid transparent;
+  background: linear-gradient(var(--bg), var(--bg)) padding-box, var(--brand) border-box;
+  box-shadow: 0 10px 30px -12px var(--glow);
+}
+.soon-badge .btn-icon { stroke: var(--soft); }
+.nav-soon { background: var(--surface-2); color: var(--text-2); border: 1px solid var(--line); }
+.footer-soon { color: var(--text-2); }
 .download-req { font-size: 14px; color: var(--text-2); text-align: center; }
 .platform-note {
   margin-top: 10px;
