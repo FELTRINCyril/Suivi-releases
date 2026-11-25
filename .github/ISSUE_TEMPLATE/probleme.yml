@@ -1,0 +1,99 @@
+name: Signaler un problème
+description: Quelque chose ne fonctionne pas comme prévu dans Suivi.
+title: "[Problème] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!WARNING]
+        > **Ce message sera public.** Tout le monde peut lire les issues de ce dépôt.
+        > N'y mettez rien de personnel : ni mot de passe, ni note privée, ni capture qui montre des
+        > habitudes que vous ne voulez pas rendre publiques. Masquez-les avant d'envoyer.
+
+  - type: input
+    id: version-suivi
+    attributes:
+      label: Version de Suivi
+      description: Dans Suivi, Réglages > Version.
+      placeholder: "1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: version-ios
+    attributes:
+      label: Version d'iOS
+      description: Réglages > Général > Informations.
+      placeholder: "iOS 26.7.3"
+    validations:
+      required: true
+
+  - type: input
+    id: modele
+    attributes:
+      label: Modèle d'iPhone
+      description: Réglages > Général > Informations > Nom du modèle.
+      placeholder: "iPhone 16"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: partie
+    attributes:
+      label: Où dans Suivi
+      options:
+        - Accueil
+        - Fiche d'une habitude
+        - Création ou modification d'une habitude
+        - Widget
+        - Apple Watch
+        - Rappels
+        - Sauvegarde, import ou export
+        - Siri ou Raccourcis
+        - Autre
+    validations:
+      required: false
+
+  - type: textarea
+    id: ce-qui-sest-passe
+    attributes:
+      label: Ce qui s'est passé
+      description: Décrivez le problème, et le message d'erreur exact s'il y en a un.
+    validations:
+      required: true
+
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Ce qui était attendu
+    validations:
+      required: true
+
+  - type: textarea
+    id: etapes
+    attributes:
+      label: Étapes pour reproduire
+      description: Si vous savez comment faire réapparaître le problème.
+      placeholder: |
+        1. Ouvrir une habitude
+        2. Toucher le bouton de validation
+        3. ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: captures
+    attributes:
+      label: Captures d'écran (facultatif)
+      description: Glissez vos images ici. Vérifiez d'abord qu'aucune habitude ni note privée n'y apparaît.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confidentialite
+    attributes:
+      label: Confidentialité
+      options:
+        - label: Je n'ai mis aucune information personnelle dans ce message.
+          required: true

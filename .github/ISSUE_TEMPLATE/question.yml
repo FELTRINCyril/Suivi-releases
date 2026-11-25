@@ -1,0 +1,47 @@
+name: Poser une question
+description: Une question sur l'installation ou l'utilisation de Suivi.
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!WARNING]
+        > **Ce message sera public.** Tout le monde peut lire les issues de ce dépôt.
+        > N'y mettez rien de personnel : ni mot de passe, ni note privée, ni habitude que vous ne
+        > voulez pas rendre publique.
+
+        Avant de demander, la réponse est peut-être déjà dans les
+        [questions fréquentes du site](https://feltrincyril.github.io/Suivi-releases/#questions).
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Votre question
+    validations:
+      required: true
+
+  - type: input
+    id: version-suivi
+    attributes:
+      label: Version de Suivi (facultatif)
+      description: Dans Suivi, Réglages > Version.
+      placeholder: "1.0"
+    validations:
+      required: false
+
+  - type: input
+    id: version-ios
+    attributes:
+      label: Version d'iOS (facultatif)
+      placeholder: "iOS 26.7.3"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confidentialite
+    attributes:
+      label: Confidentialité
+      options:
+        - label: Je n'ai mis aucune information personnelle dans ce message.
+          required: true

@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://api.github.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Suivi - Vos habitudes, une case par jour</title>
+  <meta name="description" content="Suivi trace vos habitudes sur iPhone, une case par jour : oui ou non, compteur ou mesure, séries, rappels, widgets et Apple Watch. Sans compte, sans publicité, sans pisteur.">
+  <meta name="theme-color" content="#0c0c11">
+  <meta name="color-scheme" content="dark">
+
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Suivi">
+  <meta property="og:title" content="Suivi - Vos habitudes, une case par jour">
+  <meta property="og:description" content="Une case par jour. Tout devient visible. Vos habitudes sur iPhone, Apple Watch et en widgets.">
+  <meta property="og:url" content="https://feltrincyril.github.io/Suivi-releases/">
+  <meta property="og:image" content="https://feltrincyril.github.io/Suivi-releases/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Icône de Suivi, une grille de cases colorées sur fond nuit, avec la phrase : Une case par jour. Tout devient visible.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="assets/css/site.css?v=1">
+  <script src="assets/js/site.js?v=1" defer></script>
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true" focusable="false"><defs><linearGradient id="sv-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2edacb"/><stop offset=".5" stop-color="#71b6fb"/><stop offset="1" stop-color="#b7a1fb"/></linearGradient></defs></svg>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <header class="nav" id="haut">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#haut" aria-label="Suivi, retour en haut de la page">
+        <img src="assets/img/suivi-icon.png" alt="" width="28" height="28">
+        <span aria-hidden="true">Suivi</span>
+      </a>
+      <nav aria-label="Sections">
+        <ul class="nav-links">
+          <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#questions">Questions</a></li>
+        </ul>
+      </nav>
+      <a class="nav-cta js-download" href="https://github.com/FELTRINCyril/Suivi-releases/releases/latest">Télécharger</a>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="titre-hero">
+      <img class="hero-icon" src="assets/img/suivi-icon.png" alt="" width="96" height="96">
+      <h1 id="titre-hero">Une case par jour.</h1>
+      <p class="hero-sub">Suivi trace vos habitudes en petites cases, jour après jour : lecture, sport, eau, écrans... Cochez d'un geste, sur l'iPhone, la montre ou un widget. Sans compte, sans publicité, sans pisteur.</p>
+
+      <div class="download">
+        <a class="btn btn-primary js-download" href="https://github.com/FELTRINCyril/Suivi-releases/releases/latest">
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+          Télécharger pour iPhone
+        </a>
+        <p class="download-meta js-download-meta">Dernière version sur GitHub</p>
+        <p class="download-req">iOS 26 - iPhone - Gratuit - <a href="#installation">Installation avec AltStore ou SideStore</a></p>
+        <p class="platform-note js-platform-note" hidden></p>
+      </div>
+    </section>
+
+    <!-- ===== VISUEL PRINCIPAL (captures de l'app, données de démonstration) ===== -->
+    <section class="showcase" aria-label="Aperçu de l'application">
+      <div class="glow" aria-hidden="true"></div>
+      <figure class="stage js-tilt" role="img" aria-label="Trois écrans d'iPhone. À gauche, la fiche de l'habitude Sport avec son historique et son calendrier. Au centre, l'accueil de Suivi avec les cartes Sport, Guitare et Pas de scroll. À droite, neuf habitudes sur les cinq derniers jours.">
+        <div class="phone phone-side">
+          <div class="scr">
+            <picture>
+              <source srcset="assets/captures/fiche.avif" type="image/avif">
+              <source srcset="assets/captures/fiche.webp" type="image/webp">
+              <img src="assets/captures/fiche.png" width="414" height="900" loading="lazy"
+                   alt="La fiche de l'habitude Sport : six mois en cases, la série de 7 semaines et le calendrier du mois.">
+            </picture>
+          </div>
+        </div>
+        <div class="phone phone-main">
+          <div class="scr">
+            <picture>
+              <source srcset="assets/captures/accueil.avif" type="image/avif">
+              <source srcset="assets/captures/accueil.webp" type="image/webp">
+              <img src="assets/captures/accueil.png" width="414" height="900"
+                   alt="L'accueil de Suivi : une carte par habitude, avec ses cases et son bouton de validation.">
+            </picture>
+          </div>
+        </div>
+        <div class="phone phone-side">
+          <div class="scr">
+            <picture>
+              <source srcset="assets/captures/derniers-jours.avif" type="image/avif">
+              <source srcset="assets/captures/derniers-jours.webp" type="image/webp">
+              <img src="assets/captures/derniers-jours.png" width="414" height="900" loading="lazy"
+                   alt="La vue des cinq derniers jours : neuf habitudes, une ligne chacune, une case par jour.">
+            </picture>
+          </div>
+        </div>
+      </figure>
+      <p class="showcase-note">Captures de Suivi, avec des habitudes de démonstration.</p>
+    </section>
+
+    <!-- ===== FONCTIONNALITES ===== -->
+    <section class="features" id="fonctionnalites" aria-labelledby="titre-fonctionnalites">
+      <div class="section-head">
+        <h2 id="titre-fonctionnalites"><span class="line">Une case par jour.</span> <span class="line">Et tout devient visible.</span></h2>
+        <p>Chaque habitude a son calendrier en cases. D'un coup d'œil : ce qui tient, ce qui flanche, et depuis combien de temps.</p>
+      </div>
+
+      <div class="tiles">
+
+        <article class="tile tile-wide" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>
+            <h3>Le calendrier en cases</h3>
+            <p>Une colonne par semaine, une case par jour, teintée selon la part de l'objectif atteinte. Sur l'accueil, en cartes, en lignes sur les derniers jours ou en grille du mois. Touchez une case pour cocher un jour oublié.</p>
+          </div>
+          <div class="vis vis-heat h-indigo" aria-hidden="true">
+            <div class="vh-head">
+              <span class="vh-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6M6 6v12M18 6v12M21 9v6M6 12h12"/></svg></span>
+              <span><b>Sport</b><span>Une séance, même courte</span></span>
+              <span class="vh-done"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            </div>
+            <div class="hm"><i class="l4" style="--d:0"></i><i class="l0" style="--d:0"></i><i class="l4" style="--d:0"></i><i class="l2" style="--d:0"></i><i class="l0" style="--d:0"></i><i class="l4" style="--d:0"></i><i class="l0" style="--d:0"></i><i class="l4" style="--d:1"></i><i class="l4" style="--d:1"></i><i class="l0" style="--d:1"></i><i class="l4" style="--d:1"></i><i class="l0" style="--d:1"></i><i class="l3" style="--d:1"></i><i class="l4" style="--d:1"></i><i class="l0" style="--d:2"></i><i class="l4" style="--d:2"></i><i class="l3" style="--d:2"></i><i class="l4" style="--d:2"></i><i class="l4" style="--d:2"></i><i class="l0" style="--d:2"></i><i class="l4" style="--d:2"></i><i class="l4" style="--d:3"></i><i class="l0" style="--d:3"></i><i class="l4" style="--d:3"></i><i class="l0" style="--d:3"></i><i class="l2" style="--d:3"></i><i class="l4" style="--d:3"></i><i class="l0" style="--d:3"></i><i class="l4" style="--d:4"></i><i class="l0" style="--d:4"></i><i class="l4" style="--d:4"></i><i class="l4" style="--d:4"></i><i class="l0" style="--d:4"></i><i class="l4" style="--d:4"></i><i class="l0" style="--d:4"></i><i class="l4" style="--d:5"></i><i class="l4" style="--d:5"></i><i class="l0" style="--d:5"></i><i class="l3" style="--d:5"></i><i class="l4" style="--d:5"></i><i class="l0" style="--d:5"></i><i class="l4" style="--d:5"></i><i class="l0" style="--d:6"></i><i class="l4" style="--d:6"></i><i class="l4" style="--d:6"></i><i class="l0" style="--d:6"></i><i class="l4" style="--d:6"></i><i class="l0" style="--d:6"></i><i class="l4" style="--d:6"></i><i class="l4" style="--d:7"></i><i class="l0" style="--d:7"></i><i class="l2" style="--d:7"></i><i class="l0" style="--d:7"></i><i class="l4" style="--d:7"></i><i class="l4" style="--d:7"></i><i class="l0" style="--d:7"></i><i class="l4" style="--d:8"></i><i class="l4" style="--d:8"></i><i class="l0" style="--d:8"></i><i class="l4" style="--d:8"></i><i class="l0" style="--d:8"></i><i class="l4" style="--d:8"></i><i class="l4" style="--d:8"></i><i class="l0" style="--d:9"></i><i class="l3" style="--d:9"></i><i class="l0" style="--d:9"></i><i class="l4" style="--d:9"></i><i class="l4" style="--d:9"></i><i class="l0" style="--d:9"></i><i class="l4" style="--d:9"></i><i class="l0" style="--d:10"></i><i class="l4" style="--d:10"></i><i class="l4" style="--d:10"></i><i class="l0" style="--d:10"></i><i class="l4" style="--d:10"></i><i class="l0" style="--d:10"></i><i class="l4" style="--d:10"></i><i class="l2" style="--d:11"></i><i class="l0" style="--d:11"></i><i class="l4" style="--d:11"></i><i class="l4" style="--d:11"></i><i class="l0" style="--d:11"></i><i class="l4" style="--d:11"></i><i class="l0" style="--d:11"></i><i class="l4" style="--d:12"></i><i class="l4" style="--d:12"></i><i class="l0" style="--d:12"></i><i class="l4" style="--d:12"></i><i class="l0" style="--d:12"></i><i class="l4" style="--d:12"></i><i class="l3" style="--d:12"></i><i class="l0" style="--d:13"></i><i class="l4" style="--d:13"></i><i class="l0" style="--d:13"></i><i class="l4" style="--d:13"></i><i class="l4" style="--d:13"></i><i class="l0" style="--d:13"></i><i class="l4" style="--d:13"></i><i class="l4" style="--d:14"></i><i class="l0" style="--d:14"></i><i class="l4" style="--d:14"></i><i class="l0" style="--d:14"></i><i class="l4" style="--d:14"></i><i class="l2" style="--d:14"></i><i class="l0" style="--d:14"></i><i class="l4" style="--d:15"></i><i class="l0" style="--d:15"></i><i class="l4" style="--d:15"></i><i class="l4" style="--d:15"></i><i class="l0" style="--d:15"></i><i class="l4" style="--d:15"></i><i class="l0" style="--d:15"></i><i class="l3" style="--d:16"></i><i class="l4" style="--d:16"></i><i class="l0" style="--d:16"></i><i class="l4" style="--d:16"></i><i class="l3" style="--d:16"></i><i class="l4" style="--d:16"></i><i class="l4" style="--d:16"></i><i class="l0" style="--d:17"></i><i class="l4" style="--d:17"></i><i class="l4" style="--d:17"></i><i class="l0" style="--d:17"></i><i class="l4" style="--d:17"></i><i class="l0" style="--d:17"></i><i class="l2" style="--d:17"></i><i class="l4" style="--d:18"></i><i class="l0" style="--d:18"></i><i class="l4" style="--d:18"></i><i class="l0" style="--d:18"></i><i class="l4" style="--d:18"></i><i class="l4" style="--d:18"></i><i class="l0" style="--d:18"></i><i class="l4" style="--d:19"></i><i class="l0" style="--d:19"></i><i class="l4" style="--d:19"></i><i class="l4" style="--d:19"></i><i class="l0" style="--d:19"></i><i class="l3" style="--d:19"></i><i class="l4" style="--d:19"></i><i class="l0" style="--d:20"></i><i class="l4" style="--d:20"></i><i class="l0" style="--d:20"></i><i class="l4" style="--d:20"></i><i class="l4" style="--d:20"></i><i class="l0" style="--d:20"></i><i class="l4" style="--d:20"></i><i class="l0" style="--d:21"></i><i class="l4" style="--d:21"></i><i class="l4" style="--d:21"></i><i class="l0" style="--d:21"></i><i class="l2" style="--d:21"></i><i class="l0" style="--d:21"></i><i class="l4" style="--d:21"></i><i class="l4" style="--d:22"></i><i class="l0" style="--d:22"></i><i class="l4" style="--d:22"></i><i class="l4" style="--d:22"></i><i class="l0" style="--d:22"></i><i class="l4" style="--d:22"></i><i class="l0" style="--d:22"></i><i class="l4" style="--d:23"></i><i class="l4" style="--d:23"></i><i class="l0" style="--d:23"></i><i class="l3" style="--d:23"></i><i class="l0" style="--d:23"></i><i class="l4" style="--d:23"></i><i class="l4" style="--d:23"></i><i class="l0" style="--d:24"></i><i class="l4" style="--d:24"></i><i class="l0" style="--d:24"></i><i class="l4" style="--d:24"></i><i class="l4" style="--d:24"></i><i class="l0" style="--d:24"></i><i class="l4" style="--d:24"></i><i class="l0" style="--d:25"></i><i class="l4" style="--d:25"></i><i class="l4 now" style="--d:25"></i><i class="later" style="--d:25"></i><i class="later" style="--d:25"></i><i class="later" style="--d:25"></i><i class="later" style="--d:25"></i></div>
+            <p class="vh-chips"><span>7 sem.</span><span>3 / semaine</span><span>2 / 3</span></p>
+          </div>
+        </article>
+
+        <article class="tile" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+            <h3>Oui, combien, ou mesuré</h3>
+            <p>Une case à cocher, un compteur par pas, ou une mesure avec son unité. Pour chaque jour, certains jours, ou tant de fois par semaine ou par mois. Et les habitudes à arrêter.</p>
+          </div>
+          <div class="vis vis-kinds" aria-hidden="true">
+            <div class="vk-row h-orange"><span class="vh-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg></span><span class="vk-lines">Guitare<span>Fait</span></span><span class="vk-check is-on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+            <div class="vk-row h-teal"><span class="vh-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v13"/></svg></span><span class="vk-lines">Lecture<span>12 / 20 pages</span></span><svg class="sring " viewBox="0 0 40 40" aria-hidden="true"><circle class="sring-bg" cx="20" cy="20" r="16"/><circle class="sring-fg" cx="20" cy="20" r="16" pathLength="100" style="--off:40"/></svg></div>
+            <div class="vk-row h-sky"><span class="vh-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11z"/></svg></span><span class="vk-lines">Eau<span>1,75 / 2 L</span></span><svg class="sring " viewBox="0 0 40 40" aria-hidden="true"><circle class="sring-bg" cx="20" cy="20" r="16"/><circle class="sring-fg" cx="20" cy="20" r="16" pathLength="100" style="--off:12"/></svg></div>
+          </div>
+        </article>
+
+        <article class="tile" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+            <h3>Séries et statistiques</h3>
+            <p>La série en cours et le record, en jours, en semaines ou en mois selon l'habitude. Les jours réussis mois par mois, et le taux de réussite de chaque habitude.</p>
+          </div>
+          <div class="vis vis-stats" aria-hidden="true">
+            <span class="vs-chip is-main"><span>Série</span><b>12 j</b></span>
+            <span class="vs-chip"><span>Record</span><b>34 j</b></span>
+            <span class="vs-chip"><span>Ce mois</span><b>86 %</b></span>
+            <span class="vs-chip"><span>Total</span><b>214</b></span>
+          </div>
+        </article>
+
+        <article class="tile" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15zM10 20.5a2 2 0 0 0 4 0"/></svg>
+            <h3>Rappels et bilan du soir</h3>
+            <p>Plusieurs rappels par habitude, à l'heure et les jours de votre choix, avec votre message. "Fait" se touche depuis la notification. En option, un bilan du soir de ce qui reste à faire.</p>
+          </div>
+          <div class="vis vis-remind" aria-hidden="true">
+            <div class="vr-note">
+              <img src="assets/img/suivi-icon.png" alt="" width="30" height="30" loading="lazy">
+              <p><em>21:00</em><b>Lecture</b>20 pages avant de dormir.</p>
+            </div>
+            <span class="vr-action">Fait</span>
+          </div>
+        </article>
+
+        <article class="tile" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v12l-4 4H5zM15 20v-4h4M8 9h8M8 13h5"/></svg>
+            <h3>Une note par jour</h3>
+            <p>Quelques mots sur la journée, pour chaque habitude, retrouvés dans son journal. Pour comprendre une série cassée, ou un bon mois.</p>
+          </div>
+          <div class="vis vis-notes" aria-hidden="true">
+            <span class="vn-day">Jeu. 5 nov. - Eau</span>
+            <p class="vn-text">Mal de tête le matin, je pousse sur l'eau tôt.</p>
+          </div>
+        </article>
+
+        <article class="tile tile-wide" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="18" height="8" rx="2"/></svg>
+            <h3>Des widgets à votre goût</h3>
+            <p>Une habitude en trois styles, Carte, Anneau ou Couleur, en petit, moyen ou grand, cochable sans ouvrir l'app. Et l'Aperçu de toutes vos habitudes, en liste du jour ou en semaine. Sur l'écran verrouillé aussi.</p>
+          </div>
+          <div class="vis" aria-hidden="true">
+            <div class="vw-row">
+              <div class="vw vw-card h-orange">
+                <div class="vw-top"><span class="vh-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg></span><span class="vh-done"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+                <span class="vw-name">Guitare</span>
+                <div class="hm"><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l2"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l3"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l3"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l2"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l2"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l3"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l3"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l2"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4 now"></i><i class="later"></i><i class="later"></i><i class="later"></i><i class="later"></i></div>
+              </div>
+              <div class="vw vw-ring h-sky">
+                <span class="sr-wrap"><svg class="sring " viewBox="0 0 40 40" aria-hidden="true"><circle class="sring-bg" cx="20" cy="20" r="16"/><circle class="sring-fg" cx="20" cy="20" r="16" pathLength="100" style="--off:25"/></svg><span class="sr-in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11z"/></svg></span></span>
+                <span class="vw-name">Eau</span>
+                <small>9 j</small>
+              </div>
+              <div class="vw vw-color h-indigo is-dark">
+                <div class="vw-top"><span class="vw-glyph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6M6 6v12M18 6v12M21 9v6M6 12h12"/></svg></span><span class="vw-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+                <span class="vw-big">7 sem.</span>
+                <span class="vw-name">Sport</span>
+              </div>
+            </div>
+            <p class="chips vw-styles"><span class="chip chip-on">Carte</span><span class="chip">Anneau</span><span class="chip">Couleur</span><span class="chip">Liste du jour</span><span class="chip">Semaine</span></p>
+          </div>
+        </article>
+
+        <article class="tile" data-reveal>
+          <div class="tile-text">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="3.5"/><path d="M9 6l.6-3h4.8l.6 3M9 18l.6 3h4.8l.6-3"/></svg>
+            <h3>Sur l'Apple Watch</h3>
+            <p>La liste du jour, validée d'un toucher. Le détail avec la Digital Crown pour un compteur. Même sans iPhone à côté.</p>
+          </div>
+          <div class="vis vis-watch" aria-hidden="true">
+            <div class="watch"><div class="watch-scr">
+              <p>Aujourd'hui</p>
+              <span class="wt-row h-orange">Guitare<i class="wt-dot"></i></span>
+              <span class="wt-row h-sky">Eau<svg class="sring " viewBox="0 0 40 40" aria-hidden="true"><circle class="sring-bg" cx="20" cy="20" r="16"/><circle class="sring-fg" cx="20" cy="20" r="16" pathLength="100" style="--off:12"/></svg></span>
+              <span class="wt-row h-teal">Lecture<svg class="sring " viewBox="0 0 40 40" aria-hidden="true"><circle class="sring-bg" cx="20" cy="20" r="16"/><circle class="sring-fg" cx="20" cy="20" r="16" pathLength="100" style="--off:100"/></svg></span>
+            </div></div>
+          </div>
+        </article>
+
+        <article class="tile tile-plain" data-reveal>
+          <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg>
+          <h3>Siri et Raccourcis</h3>
+          <p>"Valider Lecture dans Suivi", à la voix ou dans une automatisation.</p>
+          <div class="vis vis-siri" aria-hidden="true">
+            <span class="vsi-say">Valider Lecture dans Suivi</span>
+            <span class="vsi-ok"><i></i>C'est fait.</span>
+          </div>
+        </article>
+
+        <article class="tile tile-plain" data-reveal>
+          <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12v7.5A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V12"/></svg>
+          <h3>Une image à partager</h3>
+          <p>Le calendrier d'une habitude en image, avec sa série, pour la montrer à qui vous voulez.</p>
+          <div class="vis vis-share" aria-hidden="true">
+            <div class="vsh-card h-teal"><b>Lecture</b><div class="hm"><i class="l0"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l3"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l2"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l3"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l2"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l3"></i><i class="l0"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l2"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l2"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4 now"></i><i class="later"></i><i class="later"></i><i class="later"></i><i class="later"></i></div><small>Série 3 j</small></div>
+          </div>
+        </article>
+
+        <article class="tile tile-plain" data-reveal>
+          <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="5" rx="1.5"/><path d="M5 9v9.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V9M10 13h4"/></svg>
+          <h3>Archiver sans perdre</h3>
+          <p>Une habitude en pause sort de l'accueil, son historique reste. Reprise quand vous voulez.</p>
+          <div class="vis vis-archive chips" aria-hidden="true">
+            <span class="chip">Actives</span><span class="chip chip-on">Archivées</span>
+          </div>
+        </article>
+
+        <article class="tile tile-plain tile-half" data-reveal>
+          <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.5-6M3 4v4h4M12 8v4l3 2"/></svg>
+          <h3>Sauvegardé chaque jour</h3>
+          <p>Une copie complète par jour, les 30 dernières gardées, dans Fichiers &gt; Sur mon iPhone &gt; Suivi. Et une copie de sécurité avant chaque import.</p>
+        </article>
+
+        <article class="tile tile-plain tile-half" data-reveal>
+          <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8zM14 3v5h5M9 13h6M9 17h6"/></svg>
+          <h3>Vos données, en clair</h3>
+          <p>Tout s'exporte : en JSON, réimportable tel quel, ou en CSV, une ligne par jour, pour un tableur.</p>
+        </article>
+      </div>
+
+      <div class="soon" data-reveal>
+        <h3 class="soon-title">Rien ne sort de votre iPhone</h3>
+        <ul class="soon-list soon-brand">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10.5a4 4 0 0 0 .6-8 6 6 0 0 0-11.6-1.4A4.7 4.7 0 0 0 7 18.5z"/><path d="M4 4l16 16"/></svg>
+            <span><b>Ni compte, ni serveur</b>Pas de compte Suivi, pas de serveur, pas de publicité, pas de mesure d'audience.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg>
+            <span><b>Sur vos appareils</b>Vos habitudes, vos notes et vos sauvegardes restent sur votre iPhone et votre montre.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.7 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.8 7.5-9.5V6z"/><path d="m8.8 12 2.3 2.3 4.3-4.6"/></svg>
+            <span><b>Hors ligne</b>Suivi fonctionne entièrement sans connexion.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== INSTALLATION ===== -->
+    <section class="install" id="installation" aria-labelledby="titre-installation">
+      <div class="section-head">
+        <h2 id="titre-installation">Installé en trois gestes.</h2>
+        <p>Suivi n'est pas sur l'App Store. Il s'installe avec AltStore ou SideStore, qui le signent avec votre identifiant Apple. <span class="nw">iOS 26</span> est nécessaire.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step" data-reveal>
+          <div class="step-vis" aria-hidden="true">
+            <div class="stores">
+              <span class="store"><i></i>AltStore</span>
+              <span class="store-or">ou</span>
+              <span class="store"><i></i>SideStore</span>
+            </div>
+          </div>
+          <h3><span class="step-n" aria-hidden="true">1</span>Préparez</h3>
+          <p>Installez une fois <a href="https://altstore.io/" rel="noopener">AltStore</a> ou <a href="https://sidestore.io/" rel="noopener">SideStore</a> sur votre iPhone, en suivant le guide de leur site.</p>
+        </li>
+        <li class="step" data-reveal>
+          <div class="step-vis step-drag" aria-hidden="true">
+            <svg viewBox="0 0 64 80" class="ipa"><path d="M6 4h36l16 16v54a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M42 4v14a2 2 0 0 0 2 2h14z"/><text x="31" y="58" text-anchor="middle">.ipa</text></svg>
+            <svg viewBox="0 0 60 20" class="drag-arrow"><path d="M2 10h52m0 0-7-7m7 7-7 7"/></svg>
+            <img src="assets/img/suivi-icon.png" alt="" width="64" height="64" loading="lazy">
+          </div>
+          <h3><span class="step-n" aria-hidden="true">2</span>Ajoutez</h3>
+          <p>Téléchargez le fichier .ipa de Suivi sur l'iPhone, puis ouvrez-le avec AltStore ou SideStore.</p>
+        </li>
+        <li class="step" data-reveal>
+          <div class="step-vis step-home" aria-hidden="true">
+            <img src="assets/img/suivi-icon.png" alt="" width="62" height="62" loading="lazy">
+            <div class="vw vw-card h-teal">
+              <div class="vw-top"><span class="vh-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v13"/></svg></span><span class="vh-done"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+              <span class="vw-name">Lecture</span>
+              <div class="hm"><i class="l0"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l3"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l2"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l3"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l0"></i><i class="l4"></i><i class="l2"></i><i class="l0"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l4"></i><i class="l4 now"></i><i class="later"></i><i class="later"></i><i class="later"></i><i class="later"></i></div>
+            </div>
+          </div>
+          <h3><span class="step-n" aria-hidden="true">3</span>Commencez</h3>
+          <p>Créez une première habitude, puis posez un widget : appui long sur l'écran d'accueil, bouton +, Suivi.</p>
+        </li>
+      </ol>
+
+      <p class="install-after">Avec un identifiant Apple gratuit, l'app doit être signée à nouveau tous les <span class="nw">7 jours :</span> AltStore et SideStore s'en chargent. Vos habitudes restent sur l'iPhone d'une version à l'autre.</p>
+    </section>
+
+    <!-- ===== QUESTIONS ===== -->
+    <section class="faq" id="questions" aria-labelledby="titre-questions">
+      <div class="section-head">
+        <h2 id="titre-questions">Questions fréquentes</h2>
+      </div>
+
+      <div class="accordion">
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r1" id="q1"><span class="qa-q">Mes données sont-elles envoyées quelque <span class="nw">part ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r1" role="region" aria-labelledby="q1">
+            <p>Non. Rien n'est envoyé au développeur de Suivi : pas de compte à créer, pas de serveur, pas de publicité, pas de mesure d'audience. Vos habitudes, vos notes et vos sauvegardes restent sur votre iPhone et votre Apple Watch.</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r2" id="q2"><span class="qa-q">Et si je change <span class="nw">d'iPhone ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r2" role="region" aria-labelledby="q2">
+            <p>Dans Suivi, Réglages &gt; Exporter tout (JSON), et gardez le fichier dans iCloud Drive ou sur un ordinateur. Sur le nouvel iPhone, installez Suivi puis Réglages &gt; Importer une sauvegarde : tout revient, historique et notes compris.</p>
+            <p>La synchronisation iCloud entre appareils n'est pas disponible dans la version installée avec AltStore ou SideStore : elle demande une signature que ces outils ne fournissent pas.</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r3" id="q3"><span class="qa-q">Les widgets affichent un message au lieu de mes <span class="nw">habitudes ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r3" role="region" aria-labelledby="q3">
+            <p>Pour lire vos habitudes, les widgets partagent leurs données avec l'app. Selon la façon dont AltStore ou SideStore a signé Suivi, ce partage peut manquer : le widget l'indique alors au lieu de montrer vos cases. L'app, elle, fonctionne entièrement.</p>
+            <p>Si c'est votre cas, <a data-issue="probleme" href="https://github.com/FELTRINCyril/Suivi-releases/issues/new?template=probleme.yml">signalez-le</a> avec votre version d'iOS et l'outil utilisé.</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r4" id="q4"><span class="qa-q">Comment mettre à <span class="nw">jour ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r4" role="region" aria-labelledby="q4">
+            <p>Téléchargez le fichier de la nouvelle version, sur la page <a href="versions.html">Toutes les versions</a>, et ouvrez-le avec AltStore ou SideStore, comme la première fois. Vos habitudes sont gardées.</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r5" id="q5"><span class="qa-q">Sur quel <span class="nw">iPhone ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r5" role="region" aria-labelledby="q5">
+            <p>Un iPhone sous iOS 26 ou plus récent. L'app de l'Apple Watch, facultative, demande watchOS 26 et accompagne celle de l'iPhone ; selon l'outil d'installation, elle peut ne pas être proposée sur la montre.</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" aria-expanded="true" aria-controls="r6" id="q6"><span class="qa-q">Comment signaler un <span class="nw">problème ?</span></span><span class="qa-sign" aria-hidden="true"></span></button></h3>
+          <div class="qa-body" id="r6" role="region" aria-labelledby="q6">
+            <p>Remplissez le formulaire <a data-issue="probleme" href="https://github.com/FELTRINCyril/Suivi-releases/issues/new?template=probleme.yml">Signaler un problème</a>, avec votre version de Suivi (Réglages &gt; Version), celle d'iOS et ce qui s'est passé.</p>
+            <p>Ces messages sont publics : n'y mettez rien de personnel, ni note privée, ni habitude que vous ne voulez pas rendre publique.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== APPEL FINAL ===== -->
+    <section class="final" aria-labelledby="titre-final">
+      <img src="assets/img/suivi-icon.png" alt="" width="72" height="72" loading="lazy">
+      <h2 id="titre-final">Première case <span class="nw">aujourd'hui ?</span></h2>
+      <div class="download">
+        <a class="btn btn-primary js-download" href="https://github.com/FELTRINCyril/Suivi-releases/releases/latest">
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+          Télécharger pour iPhone
+        </a>
+        <p class="download-meta js-download-meta">Dernière version sur GitHub</p>
+        <p class="download-req">iOS 26 - iPhone - Gratuit</p>
+        <p class="platform-note js-platform-note" hidden></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h2 class="footer-h">Télécharger</h2>
+          <ul>
+            <li><a class="js-download" href="https://github.com/FELTRINCyril/Suivi-releases/releases/latest">Dernière version</a></li>
+            <li><a href="versions.html">Toutes les versions</a></li>
+            <li><a class="js-notes" href="versions.html">Notes de version</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-h">Vos retours</h2>
+          <ul>
+            <li><a data-issue="probleme" href="https://github.com/FELTRINCyril/Suivi-releases/issues/new?template=probleme.yml">Signaler un problème</a></li>
+            <li><a data-issue="idee" href="https://github.com/FELTRINCyril/Suivi-releases/issues/new?template=idee.yml">Proposer une idée</a></li>
+            <li><a data-issue="question" href="https://github.com/FELTRINCyril/Suivi-releases/issues/new?template=question.yml">Poser une question</a></li>
+          </ul>
+        </div>
+        <div class="footer-legal">
+          <h2 class="footer-h">À propos</h2>
+          <p>Suivi est une app indépendante, sans composant tiers, sans publicité ni pisteur. Ce site ne dépose aucun cookie.</p>
+        </div>
+      </div>
+      <p class="footer-note">Apple Watch, iPhone, Siri et iCloud sont des marques d'Apple Inc. Suivi n'est pas affilié à Apple.</p>
+    </div>
+  </footer>
+</body>
+</html>
